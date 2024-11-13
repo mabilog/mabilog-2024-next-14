@@ -1,0 +1,44 @@
+@use "../../styles/breakpoints.scss" as *;
+
+.works {
+  background-color: #000aff;
+  color: #fff;
+  padding: 10rem 0;
+
+  &__container {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    max-width: 69rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    letter-spacing: 1.2;
+    margin: auto;
+
+    h2 {
+      font-size: 2.6rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 1.5;
+      letter-spacing: 1.2;
+    }
+
+    @include media-query($from: tablet) {
+      h2 {
+        font-size: 4.6rem;
+      }
+
+      p {
+        font-size: 2.4rem;
+      }
+    }
+
+    @include media-query($from: desktop) {
+      max-width: 120rem;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@use "../../styles/breakpoints.scss" as *;
+
+.hero {
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4rem;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 135rem;
+    margin: 20rem auto 25rem;
+    color: #000;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+
+    @include media-query($from: tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__titleContainer {
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include media-query($from: tablet) {
+      gap: 3rem;
+    }
+
+    @include media-query($from: desktop) {
+      gap: 3rem;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 4.4rem;
+  }
+
+  &__image {
+    width: 30rem;
+    height: auto;
+  }
+}

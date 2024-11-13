@@ -1,0 +1,19 @@
+$breakpoints: (
+  mobile: 320px,
+  tablet: 768px,
+  desktop: 1200px,
+  widescreen: 1400px,
+  super-widescreen: 1920px,
+);
+
+$media-type: "screen";
+
+@use "../../node_modules/sass-mq/mq" with (
+  $breakpoints: $breakpoints
+);
+
+@mixin media-query($from: false, $until: false, $and: false) {
+  @include mq.mq($from, $until, $and) {
+    @content;
+  }
+}

@@ -1,0 +1,97 @@
+@use "../../styles/breakpoints.scss" as *;
+
+.featured {
+  &__container {
+    color: white;
+    background-color: #000aff;
+    margin: auto;
+    position: relative;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+  }
+
+  &__box {
+    max-width: fit-content;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    width: 100%;
+    margin-top: -20rem;
+    left: 0;
+    right: 0;
+    padding: 4.8rem;
+
+    @include media-query($from: tablet) {
+      margin-top: -10rem;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+
+  &__companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem;
+
+    @include media-query($from: tablet) {
+      flex-direction: row;
+    }
+
+    svg {
+      width: auto;
+      height: 5rem;
+    }
+  }
+
+  &__about {
+    max-width: 112rem;
+    margin: auto;
+    padding-top: 28rem;
+    padding-bottom: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    p {
+      font-size: 2.4rem;
+    }
+
+    @include media-query($from: tablet) {
+      flex-direction: row;
+      padding-top: 18rem;
+      padding-bottom: 14rem;
+      gap: 5rem;
+    }
+
+    @include media-query($from: desktop) {
+      padding-top: 20rem;
+      padding-bottom: 18rem;
+    }
+  }
+
+  &__titleContainer {
+    word-wrap: anywhere;
+
+    h2 {
+      font-size: 4.8rem;
+      font-weight: bold;
+      max-width: 45rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

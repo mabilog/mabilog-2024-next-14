@@ -1,0 +1,31 @@
+@use "../../styles/breakpoints.scss" as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  label {
+    font-size: 1.6rem;
+  }
+
+  input,
+  textarea {
+    padding: 0.8rem;
+  }
+
+  &__btnSubmit {
+    padding: 1rem 1.2rem;
+    transition: background-color 200ms ease, color 200ms ease;
+    background-color: #fff;
+    border: 1px solid #000aff;
+    color: #000aff;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #000aff;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@use "../../styles/breakpoints.scss" as *;
+
+.navbar {
+  color: #fff;
+  background-color: #000aff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: padding 300ms ease;
+  z-index: 2;
+  padding: 1rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 128rem;
+    margin: auto;
+    font-size: 1.8rem;
+  }
+
+  &__logoLink {
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem;
+  }
+
+  &__logo {
+    width: 6rem;
+    height: auto;
+    transition: transform 300ms ease;
+
+    @include media-query($from: tablet) {
+      width: 10rem;
+    }
+
+    path {
+      transition: fill 300ms ease;
+      fill: #fff;
+    }
+  }
+
+  &__linksWrapper {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+    a {
+      padding: 1rem 1.8rem;
+      text-decoration: none;
+      color: inherit;
+      transition: background-color 200ms ease, color 200ms ease;
+      border: 1px solid transparent;
+      font-weight: 600;
+
+      &:hover {
+        background-color: white;
+        color: #000aff;
+      }
+    }
+  }
+
+  &__mobileMenu {
+    flex-direction: column;
+  }
+
+  &__mobilemenuBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 24px;
+    z-index: 10;
+
+    span {
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: #fff;
+      transition: 300ms;
+    }
+  }
+
+  &__desktopMenu {
+    display: none;
+
+    @include media-query($from: tablet) {
+      display: flex;
+    }
+  }
+}

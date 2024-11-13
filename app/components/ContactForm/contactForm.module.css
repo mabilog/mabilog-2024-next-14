@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.form label {
+  font-size: 1.6rem;
+}
+.form input,
+.form textarea {
+  padding: 0.8rem;
+}
+.form__btnSubmit {
+  padding: 1rem 1.2rem;
+  transition: background-color 200ms ease, color 200ms ease;
+  background-color: #fff;
+  border: 1px solid #000aff;
+  color: #000aff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.form__btnSubmit:hover {
+  background-color: #000aff;
+  color: #fff;
+}/*# sourceMappingURL=contactForm.module.css.map */

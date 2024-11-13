@@ -1,0 +1,54 @@
+@use "../../styles/breakpoints.scss" as *;
+
+.aboutHero {
+  margin: 15rem auto 10rem;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  max-width: 120rem;
+
+  @include media-query($from: tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  &__imageContainer {
+    img {
+      width: 100%;
+      height: auto;
+
+      @include media-query($from: tablet) {
+        max-width: 46rem;
+      }
+    }
+  }
+
+  &__textContainer {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 8rem;
+      font-weight: 900;
+    }
+
+    p {
+      line-height: 1.8;
+    }
+
+    @include media-query($from: tablet) {
+      gap: 3.2rem;
+
+      h1 {
+        font-size: 13.6rem;
+        margin-bottom: 2.2rem;
+      }
+
+      p {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
