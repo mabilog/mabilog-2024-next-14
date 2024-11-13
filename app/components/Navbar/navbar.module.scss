@@ -8,7 +8,6 @@
   width: 100%;
   transition: padding 300ms ease;
   z-index: 2;
-  padding: 1rem;
 
   &__container {
     display: flex;
@@ -22,13 +21,13 @@
   &__logoLink {
     text-decoration: none;
     color: inherit;
-    padding: 1rem;
   }
 
   &__logo {
     width: 6rem;
     height: auto;
     transition: transform 300ms ease;
+    transform: scale(0.7);
 
     @include media-query($from: tablet) {
       width: 10rem;

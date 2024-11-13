@@ -49,7 +49,7 @@ const AboutHero = () => {
         </p>
       </div>
       <div className={styles.aboutHero__imageContainer}>
-        <Image src={ProfilePic} alt="Angelo's Profile Picture" />
+        <Image src={ProfilePic} alt="Angelo's Profile Picture" priority />
       </div>
     </div>
   );
