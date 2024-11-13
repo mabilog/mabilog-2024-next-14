@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./hero.module.scss";
-import Cartoon from "../svg/cartoon.svg";
+import { Cartoon } from "../svg";
 
 const Hero = () => {
   return (

@@ -50,7 +50,6 @@ const Navbar: React.FC = () => {
           </Link>
 
           <nav className={styles.navbar__linksWrapper}>
-            <Link href="/portfolio">Portfolio</Link>
             <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
           </nav>
