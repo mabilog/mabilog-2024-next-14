@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <>
       <footer className={styles.footer}>
-        <div className={styles.footer__container}>
+        <p className={styles.footer__container}>
           © Mabilog 2024 | From Montréal with ❤️
-        </div>
+        </p>
       </footer>
     </>
   );

@@ -1,5 +1,45 @@
 @use "./breakpoints.scss";
 
+@font-face {
+  font-family: "AvantGarde";
+  src: url("/fonts/ITC Avant Garde Gothic Pro-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvantGarde";
+  src: url("/fonts/ITC Avant Garde Gothic Pro-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvantGarde";
+  src: url("/fonts/ITC Avant Garde Gothic Pro-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("/fonts/Sofia\ Pro\ Regular\ Az.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("/fonts/Sofia\ Pro\ Semi\ Bold\ Az.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --font-avantGarde: "AvantGarde", sans-serif;
+  --font-sofia: "Sofia", sans-serif;
+}
+
 html {
   font-size: 62.5%; /* 10px */
 }
@@ -15,6 +55,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: black;
+  font-family: var(--font-sofia);
 }
 
 * {
@@ -34,6 +75,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+  font-family: var(--font-avantGarde);
 }
 
 h1,
@@ -68,9 +110,11 @@ h6,
 
 p {
   font-size: 2rem;
+  font-family: var(--font-sofia);
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  font-family: var(--font-sofia);
 }

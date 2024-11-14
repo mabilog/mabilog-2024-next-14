@@ -36,7 +36,11 @@
 
   &__title {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3.6rem;
+
+    @include media-query($from: tablet) {
+      font-size: 4rem;
+    }
   }
 
   &__image {

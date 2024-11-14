@@ -7,7 +7,7 @@ const GetInTouch = () => {
     <div className={styles.getInTouch}>
       <p>Fancy building some cool stuff together?</p>
       <Link href="/contact" className={styles.getInTouch__link}>
-        Get in touch
+        Get in touch.
       </Link>
     </div>
   );
