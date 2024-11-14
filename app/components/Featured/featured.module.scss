@@ -82,10 +82,14 @@
     word-wrap: anywhere;
 
     h2 {
-      font-size: 4.8rem;
+      font-size: 3.6rem;
       font-weight: bold;
       max-width: 45rem;
       margin-bottom: 4rem;
+
+      @include media-query($from: tablet) {
+        font-size: 4.8rem;
+      }
     }
   }
 

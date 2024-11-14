@@ -8,13 +8,14 @@
     justify-content: space-around;
     align-items: center;
     max-width: 135rem;
-    margin: 20rem auto 25rem;
+    margin: 12rem auto 25rem;
     color: #000;
     padding-left: 2.4rem;
     padding-right: 2.4rem;
 
     @include media-query($from: tablet) {
       flex-direction: row;
+      margin-top: 20rem;
     }
   }
 
@@ -35,7 +36,7 @@
 
   &__title {
     font-weight: bold;
-    font-size: 4.4rem;
+    font-size: 4rem;
   }
 
   &__image {

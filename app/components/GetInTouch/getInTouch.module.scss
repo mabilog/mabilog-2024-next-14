@@ -5,14 +5,22 @@
   flex-direction: column;
   gap: 2rem;
   text-align: center;
-  padding: 10rem 2.4rem;
+  padding: 8rem 2.4rem 10rem;
   margin-bottom: 3rem;
 
+  @include media-query($from: tablet) {
+    padding-top: 10rem;
+  }
+
   &__link {
-    font-size: 13.6rem;
+    font-size: 12rem;
     -webkit-text-stroke: 2px #000a0f;
     color: transparent;
     font-weight: 700;
     line-height: 0.85;
+
+    @include media-query($from: tablet) {
+      font-size: 13.6rem;
+    }
   }
 }

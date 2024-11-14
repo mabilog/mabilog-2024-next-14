@@ -39,9 +39,7 @@ const Navbar: React.FC = () => {
           <MLogo className={styles.navbar__logo} />
         </Link>
 
-        <nav
-          className={`${styles.navbar__linksWrapper} ${styles.navbar__desktopMenu}`}
-        >
+        <nav className={styles.navbar__linksWrapper}>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
         </nav>
